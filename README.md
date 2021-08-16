@@ -29,7 +29,7 @@ So I decided to try something faster, such as the `getImageData()` / `putImageDa
 
 <br>
 
-Boy was that a game changer!  
+**Boy was that a game changer!**  
 It brought rendering down to ~15 milliseconds per frame, even for larger canvases!
 
 (Well, only for Chrome and Edge… Firefox is surprisingly slower in this regards).
