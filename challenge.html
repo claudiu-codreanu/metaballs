@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <title>Metaballs Challenge</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Challenge: Metaballs</h1>
+        <div class="credit">(Proposed originally by Marian Veteanu)</div>
+
+        <p>
+            Dear recreational coding club members!
+        </p>
+
+        <p>
+            Happy Friday! We hope you had a nice and productive week at work and now you’re looking forward to a nice
+            and entertaining weekend. For this reason, please allow us to add to your entertainment sources a new recreational coding challenge!
+        </p>
+
+        <h2>
+            Coding Challenge
+        </h2>
+
+        <p>
+            This weekend we’re serving metaballs! This is not a fancy dish, but a computer visualization that you can do
+            in JavaScript on a canvas! All the ingredients are included with your computer, while the steps are provided below:
+        </p>
+
+        <ul>
+
+            <li>
+                Setup yourself a nice canvas of a decent resolution. Try a smaller resolution first since this program
+                will run pretty "hot" on resources.
+            </li>
+
+            <li>
+                Consider a few virtual balls that are bouncing around the screen (balls are virtual – you don’t need to
+                render them). These balls will have their centers at <code>(x<sub>i</sub>, y<sub>i</sub>)</code> and radius
+                <code>r</code>.
+            </li>
+
+            <li>
+                For each frame, calculate the result of the following formula for each pixel <code>(x, y)</code> in the
+                frame. In this formula the <code>x<sub>i</sub>, y<sub>i</sub></code> are the coordinates of the virtual balls,
+                and <code>r</code> their radius.
+
+                <figure>
+                    <img alt="Pixel forumla image" src="img/formula.jpg">
+                    <figCaption>Pixel Formula</figCaption>
+                </figure>
+
+                Since you’re looping over all pixels of canvas in a frame, your CPU will get hot! Choose a decently
+                small size, to prevent overheating!
+            </li>
+
+            <li>
+                Map the result of this function to a color Hue and plot the pixel!
+                You need to work in HSL / HSV mode instead of RGB. Set the Saturation and Lightness to constant value
+                (maximum) and then just manipulate the Hue.
+                (Hue goes from <code>0</code> to <code>360</code>… therefore map the above sum to the
+                <code>0...360</code> interval)
+
+            </li>
+
+            <li>
+                Tune the parameters to change the visualization:
+                <ul>
+                    <li>
+                        We suggest to change the radius of virtual balls … try something small, then something gigantic!
+                    </li>
+                    <li>
+                        You can also try to change the mapping of the sum to the color for a totally different effect.
+                        Instead of mapping to <code>0...360</code>, map to a different interval.
+                    </li>
+                    <li>
+                        Try also to increase the canvas. If program becomes slow, use small "rectangles" or "circles"
+                        instead of pixels, in order to keep the discrete resolution low on a big canvas.
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <p>
+            Credits: <a href="https://www.youtube.com/watch?v=ccYLb7cLB1I" target="_blank">Dan Shiffman</a>,
+            <a href="http://jamie-wong.com/2014/08/19/metaballs-and-marching-squares/" target="_blank">Jamie Wong</a>
+            and <a href="https://en.wikipedia.org/wiki/Metaballs" target="_blank">Wikipedia</a>.
+        </p>
+
+        <p class="fun">
+            Have fun!
+        </p>
+
+    </main>
+
+</body>
+
+</html>

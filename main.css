@@ -1,0 +1,117 @@
+canvas {
+    border: 1px solid grey;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.effects {
+    width: 380;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.grey {
+    color: grey;
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.inverted-color {
+    margin-left: 40px;
+}
+
+.other {
+    width: 350;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.number {
+    width: 70px;
+    margin-left: 10px;
+}
+
+.label {
+    display: inline-block;
+    text-align: right;
+    width: 190px;
+    margin-bottom: 10px;
+}
+
+
+canvas {
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+main {
+  max-width: 600px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-left: 60px;
+  font-family: Verdana;
+  font-size: 11px;
+  color: #555555;
+  line-height: 150%;
+  letter-spacing: .25px;
+  /*border: 1px solid grey;*/
+}
+
+.credit {
+  font-size: smaller;
+  font-style: italic;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h1 {
+    color: midnightblue;
+    margin-top: 30px;
+}
+
+h2 {
+  color: midnightblue;
+  margin-top: 30px;
+}
+
+code {
+    font-family: Consolas,"courier new";
+    color: crimson;
+    background-color: #f1f1f1;
+    font-size: small;
+}
+
+.fun {
+    font-weight: bold;
+    color: navy;
+}
+
+figCaption {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 120px;
+    font-style: italic;
+    font-size: smaller;
+    font-weight: bold;
+}

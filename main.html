@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <title>Metaballs</title>
+    <link rel="stylesheet" href="main.css">
+</head> 
+
+<body>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <script src="main.js" type="text/javascript"></script>
+
+    <div>
+        <div class="effects">
+            <fieldset>
+                <legend>Color Effect</legend>
+        
+                <div class="column">
+                    <input type="radio" name="color-effect" value="red" id="rbRed" onclick="setColorEffect('red')">
+                    <label for="rbRed"><span class="red">Red</span></label>
+                    <br>
+                    <input type="radio" name="color-effect" value="green" id="rbGreen" onclick="setColorEffect('green')">
+                    <label for="rbGreen"><span class="green">Green</span></label>
+                    <br>
+                    <input type="radio" name="color-effect" value="blue" id="rbBlue" onclick="setColorEffect('blue')">
+                    <label for="rbBlue"><span class="blue">Blue</span></label>
+                </div>
+        
+                <div class="column">
+                    <input type="radio" name="color-effect" value="grey" id="rbGrey" onclick="setColorEffect('grey')">
+                    <label for="rbGrey"><span class="grey">Grey</span></label>
+                    <br>
+                    <input type="radio" name="color-effect" value="hsl" id="rbHsl" onclick="setColorEffect('hsl')" checked>
+                    <label for="rbHsl">HSL</label>
+                </div>
+        
+                <div class="column inverted-color">
+                    <input type="checkbox" id="chkInverted" onclick="setInvertedEffect()">
+                    <label for="chkInverted">Inverted Color</label>
+                </div>
+            </fieldset>
+        </div>
+        
+        <div class="other">
+            <fieldset>
+                <legend>Other Variables</legend>
+        
+                <label for="numBalls" class="label">Number of Balls (5 to 20):</label>
+                <input type="number" value="5" id="numBalls" class="number" onchange="setNumBalls()" min="1" max="20">
+                <br>
+                <label for="ballRadius" class="label">Ball Radius (10 to 300):</label>
+                <input type="number" value="30" id="ballRadius" class="number" onchange="setBallRadius()" min="10" max="300">
+            </fieldset>
+        </div>
+    </div>
+    
+</body>
+
+</html>
